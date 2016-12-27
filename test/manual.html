@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery.is-scrollable Plugin Test</title>
+  <style type="text/css">
+  div{overflow: auto;}
+  </style>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
+  <script type="text/javascript" src="../src/jquey.is-scrollable.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#hv-scrolled-to-10x10").scrollLeft(10).scrollTop(10);
+      console.log("vertically-scrollable: ");
+      console.log($(":vertically-scrollable"));
+      console.log("horizontally-scrollable: ");
+      console.log($(":horizontally-scrollable"));
+      console.log("current scroll for #hv-scrolled-to-10x10:");
+      console.log("left: " + $("#hv-scrolled-to-10x10").scrollLeft());
+      console.log("top: " + $("#hv-scrolled-to-10x10").scrollTop());
+    });
+  </script>
+</head>
+
+<body>
+  <div id="no-scroll" style="width: 200px;">
+    <pre>No scroll</pre>
+  </div>
+  <div id="h-scroll" style="width: 100px;">
+    <pre>Horizontal scroll Horizontal scroll Horizontal scroll Horizontal scroll Horizontal scroll Horizontal scroll</pre>
+  </div>
+  <div id="v-scroll" style="width: 200px; height: 100px;">
+    <pre>
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+Vertical scroll
+</pre>
+  </div>
+  <div id="hv-scroll" style="width: 200px; height: 100px;">
+    <pre>Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll</pre>
+  </div>
+
+  <div id="hv-scrolled-to-10x10" style="width: 200px; height: 100px;">
+    <pre>Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll
+Horizontal and vertical scroll Horizontal and vertical scroll Horizontal and vertical scroll</pre>
+  </div>
+
+</body>
+
+</html>

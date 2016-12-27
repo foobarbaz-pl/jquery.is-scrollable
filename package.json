@@ -1,0 +1,11 @@
+{
+  "name": "jquery.is-scrollable",
+  "version": "1.0.0",
+  "description": "A jQuery plugin to check if element has a scrollbar.",
+  "main": "dist/jquery.is-scrollable.js",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "Sebastian Cichosz",
+  "license": "MIT"
+}
