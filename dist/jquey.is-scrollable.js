@@ -1,3 +1,10 @@
+/**
+ * jquery.is-scrollable - A jQuery plugin to check if element has a scrollbar.
+ * @version v1.0.0
+ * @author Sebastian Cichosz
+ * @link https://github.com/foobarbaz-pl/jquery.is-scrollable
+ * @license MIT
+ */
 (function($) {
 
   /**
