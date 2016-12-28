@@ -9,13 +9,17 @@
     "url": "https://github.com/foobarbaz-pl/jquery.is-scrollable.git"
   },
   "keywords": [
-    "jquery-plugin"
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "scrollbar"
   ],
-  "author": "Sebastian Cichosz",
+  "author": {
+    "name": "Sebastian Cichosz",
+    "url": "https://github.com/foobarbaz-pl"
+  },
   "license": "MIT",
   "scripts": {
-    "gulp": "gulp",
-    "minify": "gulp minify"
+    "gulp": "gulp"
   },
   "dependencies": {
     "jquery": ">=1.2.6"
