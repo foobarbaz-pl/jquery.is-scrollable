@@ -8,13 +8,13 @@ gulp.task('build-js', function() {
   var debugBanner = ['/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
     ' * @version v<%= pkg.version %>',
-    ' * @author <%= pkg.author %>',
+    ' * @author <%= pkg.author.name %>',
     ' * @link <%= pkg.homepage %>',
     ' * @license <%= pkg.license %>',
     ' */',
     ''
   ].join('\n');
-  var minBanner = '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= pkg.author %> | License: <%= pkg.license %> */\n';
+  var minBanner = '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= pkg.author.name %> | License: <%= pkg.license %> */\n';
 
   var debugFilter = filter(['**/*', '!**/*.min.js'], {restore: true});
   var minFilter = filter('**/*.min.js', {restore: true});

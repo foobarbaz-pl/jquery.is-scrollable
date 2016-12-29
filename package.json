@@ -21,6 +21,13 @@
   "scripts": {
     "gulp": "gulp"
   },
+  "files": [
+    "dist/*",
+    "demo/*",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE.txt"
+  ],
   "dependencies": {
     "jquery": ">=1.2.6"
   },
